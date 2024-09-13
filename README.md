@@ -1,7 +1,7 @@
 # JSocialFact: ソーシャルメディアに基づく日本語ドメインの偽誤情報データセット ver.1
 repository for the  (JSocialFact).
 
-本データセット(JSocialFact ver.1)は***データセットとなります。
+本データセット(JSocialFact ver.1)はソーシャルメディアに基づく日本語ドメインの偽誤情報データセットとなります。
 
 ## データセットの概要
 JSocialFactは***のカテゴリに関する日本語ドメインの偽誤情報のQAデータセットです。
