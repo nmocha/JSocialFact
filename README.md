@@ -10,7 +10,7 @@ ver.1では、ソーシャルメディアログに基づき、385件を人手で
 データフォーマットは以下の通りです。  
 
 - `Id`: JSocialFact ver.1におけるId
-- `noteId`: 参照元となったコミュニティノートのId。[https://communitynotes.x.com/guide/en/under-the-hood/download-data](https://communitynotes.x.com/guide/en/under-the-hood/download-data)でダウンロードできるコミュニティノートID(`noteId`)と一致します（2024年4月時点）。収集されたコミュニティノートの投稿日時の期間は、2022年3月から2024年3月までです。
+- `noteId`: 参照元となったコミュニティノートのId。[https://communitynotes.x.com/guide/en/under-the-hood/download-data](https://communitynotes.x.com/guide/en/under-the-hood/download-data)でダウンロードできるコミュニティノートID(`noteId`)と一致します(2024年4月時点)。収集されたコミュニティノートの投稿日時の期間は、2022年3月から2024年3月までです。
 - `question`: コミュニティノートおよびコミュニティノートの作成対象となったポストを元に作成された、偽誤情報等を含む質問文
 - `reference-answer`: 人手によって作成された短い参考回答(模範回答ではないことに留意)
 - `info-category-01`, `info-category-02`, `info-category-03`: 人手によってタグづけされた質問文に含まれる偽誤情報等に関する情報類型のカテゴリ(複数カテゴリに分類されている場合がある)
