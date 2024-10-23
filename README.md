@@ -39,6 +39,7 @@ noteIdは、[https://communitynotes.x.com/guide/en/under-the-hood/download-data]
 
 
 ## 参考文献
+```
 @misc{nakazatoetal2024,
   title="ソーシャルメディアからの偽誤情報データセット作成とLLM 正確性ベンチマークの構築",
   author="朋楓, 中里 and 正輝, 大西 and 久美, 鈴木 ",
@@ -48,6 +49,8 @@ noteIdは、[https://communitynotes.x.com/guide/en/under-the-hood/download-data]
   url={https://doi.org/10.51094/jxiv.875},
   language  = "ja",
 }
+```
+
 
 ## 免責事項
 本データセットの制作者は、利用者が利用者自身又は第三者に与えた損害について、一切の責任を負わないものとする。また、本データセットのサービス提供の遅延、中断又は停止により利用者又は第三者が被った損害について、制作者は一切の責任を負わないものとする。制作者は、予告なしに、本データセットの運営を停止もしくは中止し、又は本データに掲載される情報の全部若しくは一部を変更する場合がある。
