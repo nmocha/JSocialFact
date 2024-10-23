@@ -1,12 +1,13 @@
 # JSocialFact: ソーシャルメディアに基づく日本語ドメインの偽誤情報データセット ver.1
 ## データの概要
-JSocialFactは、ソーシャルメディア（Xにおけるポストおよびコミュニティノート）のログを元に人手によって作成された日本語の偽誤情報のQAデータセットです。
-LLMで使用されることを考慮して、質問と短い参考回答からなっています。データには詳細な分類タグが付与されています。
-また、本データは日本語LLM 出力の安全性・適切性に特化したインストラクション・データ[AnswerCarefully Dataset](https://liat-aip.sakura.ne.jp/wp/answercarefully-dataset/)に準拠し、AnswerCarefullyにおけるLLMのリスクタイプに関する分類情報を含みます。本データは主にAnswerCarefullyにおけるリスクタイプ（`risk-area`）: `誤情報`をカバーしています。
+JSocialFactは、ソーシャルメディア（Xにおけるポストおよびコミュニティノート）のログを元に人手によって作成された日本語の偽誤情報のQAデータセットです。  
+LLMで使用されることを考慮して、質問と短い参考回答からなっています。データには詳細な分類タグが付与されています。  
+また、本データは日本語LLM 出力の安全性・適切性に特化したインストラクション・データ[AnswerCarefully Dataset](https://liat-aip.sakura.ne.jp/wp/answercarefully-dataset/)に準拠し、AnswerCarefullyにおけるLLMのリスクタイプに関する分類情報を含みます。本データは主にAnswerCarefullyにおけるリスクタイプ（`risk-area`）: `誤情報`をカバーしています。  
 ver.1では、ソーシャルメディアログに基づき、386件を人手で作成しています。
 
 ## データフォーマット
-データはjson形式(773 KB)で配布しています。データフォーマットは以下の通りです。
+データはjson形式(773 KB)で配布しています。  
+データフォーマットは以下の通りです。  
 
 - `Id`: JSocialFact ver.1におけるId
 - `noteId`: 参照元となったコミュニティノートのId。[https://communitynotes.x.com/guide/en/under-the-hood/download-data](https://communitynotes.x.com/guide/en/under-the-hood/download-data)でダウンロードできるコミュニティノートID(noteId)と一致します（2024年4月時点）。収集されたコミュニティノートの投稿日時の期間は、2022年3月から2024年3月までです。
@@ -46,8 +47,8 @@ ver.1では、ソーシャルメディアログに基づき、386件を人手で
 
 
 ## ご利用上の注意
-データセットの利用をご希望の方は[こちらのフォーム](https://forms.gle/Z5TRikdkkGP5YHCd7)に必要事項をご記入ください。データセットへのリンクをお送りします。
-この方法以外でのデータの再配布は禁止します。 本データセットはその性質上不適切な表現を含みます。承諾の上、LLMの安全性・公平性向上のためにご利用ください。 
+データセットの利用をご希望の方は[こちらのフォーム](https://forms.gle/Z5TRikdkkGP5YHCd7)に必要事項をご記入ください。データセットへのリンクをお送りします。  
+この方法以外でのデータの再配布は禁止します。 本データセットはその性質上不適切な表現を含みます。承諾の上、LLMの安全性・公平性向上のためにご利用ください。   
 本データセットの利用においては、以下の参考文献をご参照ください。
 
 
@@ -69,4 +70,5 @@ ver.1では、ソーシャルメディアログに基づき、386件を人手で
 本データセットの制作者は、利用者が利用者自身又は第三者に与えた損害について、一切の責任を負わないものとする。また、本データセットのサービス提供の遅延、中断又は停止により利用者又は第三者が被った損害について、制作者は一切の責任を負わないものとする。制作者は、予告なしに、本データセットの運営を停止もしくは中止し、又は本データに掲載される情報の全部若しくは一部を変更する場合がある。
 
 ## License
-This work is licensed under a Creative Commons Attribution 4.0 International License.
+This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).
+
