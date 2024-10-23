@@ -1,8 +1,8 @@
 # JSocialFact: ソーシャルメディアに基づく日本語ドメインの偽誤情報データセット ver.1
 ## データの概要
-JSocialFactは、ソーシャルメディア（Xにおけるポストおよびコミュニティノート）のログを元に人手によって作成された日本語の偽誤情報のQAデータセットです。  
+JSocialFactは、ソーシャルメディア(Xにおけるポストおよびコミュニティノート)のログを元に人手によって作成された日本語の偽誤情報のQAデータセットです。  
 LLMで使用されることを考慮して、質問と短い参考回答からなっています。データには詳細な分類タグが付与されています。  
-また、本データは日本語LLM 出力の安全性・適切性に特化したインストラクション・データ[AnswerCarefully Dataset](https://liat-aip.sakura.ne.jp/wp/answercarefully-dataset/)に準拠し、AnswerCarefullyにおけるLLMのリスクタイプに関する分類情報を含みます。本データは主にAnswerCarefullyにおけるリスクタイプ（`risk-area`）: `誤情報`をカバーしています。  
+また、本データは日本語LLM 出力の安全性・適切性に特化したインストラクション・データ[AnswerCarefully Dataset](https://liat-aip.sakura.ne.jp/wp/answercarefully-dataset/)に準拠し、AnswerCarefullyにおけるLLMのリスクタイプに関する分類情報を含みます。本データは主にAnswerCarefullyにおけるリスクタイプ(`risk-area`): `誤情報`をカバーしています。  
 ver.1では、ソーシャルメディアログに基づき、386件を人手で作成しています。
 
 ## データフォーマット
