@@ -56,7 +56,7 @@ ver.1では、ソーシャルメディアログに基づき、386件を人手で
 ```
 @misc{nakazatoetal2024,
   title="ソーシャルメディアからの偽誤情報データセット作成とLLM 正確性ベンチマークの構築",
-  author="朋楓, 中里 and 正輝, 大西 and 久美, 鈴木 ",
+  author="中里 朋楓 and 大西 正輝 and 鈴木 久美",
   year={2024},
   eprint={875},
   archivePrefix={jxiv},
