@@ -1,12 +1,24 @@
 # JSocialFact: ソーシャルメディアに基づく日本語ドメインの偽誤情報データセット ver.1
-本データセット(JSocialFact ver.1)はソーシャルメディアに基づく日本語ドメインの偽誤情報データセットとなります。
-
-## データセットの概要
-JSocialFactは日本語ドメインの偽誤情報のQAデータセットです。
-
+## データの概要
+JSocialFactは、ソーシャルメディア（Xにおけるポストおよびコミュニティノート）のログを元に人手によって作成された日本語の偽誤情報のQAデータセットです。
+LLMで使用されることを考慮して、質問と短い参考回答からなっています。データには詳細な分類タグが付与されています。
+また、本データは日本語LLM 出力の安全性・適切性に特化したインストラクション・データ[AnswerCarefully Dataset](https://liat-aip.sakura.ne.jp/wp/answercarefully-dataset/)に準拠し、AnswerCarefullyにおけるLLMのリスクタイプに関する分類情報を含みます。本データは主にAnswerCarefullyにおけるリスクタイプ（`risk-area`）: `誤情報`をカバーしています。
+ver.1では、ソーシャルメディアログに基づき、386件を人手で作成しています。
 
 ## データフォーマット
-データフォーマットは以下の通りです。
+データはjson形式(773 KB)で配布しています。データフォーマットは以下の通りです。
+
+- `Id`: JSocialFact ver.1におけるId
+- `noteId`: 参照元となったコミュニティノートのId。[https://communitynotes.x.com/guide/en/under-the-hood/download-data](https://communitynotes.x.com/guide/en/under-the-hood/download-data)でダウンロードできるコミュニティノートID(noteId)と一致します（2024年4月時点）。収集されたコミュニティノートの投稿日時の期間は、2022年3月から2024年3月までです。
+- `question`: コミュニティノートおよびコミュニティノートの作成対象となったポストを元に作成された、偽誤情報等を含む質問文
+- `reference-answer`: 人手によって作成された短い参考回答(模範回答ではないことに留意)
+- `info-category-01`, `info-category-02`, `info-category-03`: 人手によってタグづけされた質問文に含まれる偽誤情報等に関する情報類型のカテゴリ(複数カテゴリに分類されている場合がある)
+- `intention-category-01`, `intention-category-02`, `intention-category-03`: 人手によってタグづけされた質問文に含まれる偽誤情報等に関する情報の意図・動機のカテゴリ(複数カテゴリに分類されている場合がある)
+- `topic-01`, `topic-02`, `topic-03`, `topic-04`: 人手によってタグづけされた質問文に含まれる偽誤情報等に関する情報のトピックのカテゴリ(複数カテゴリに分類されている場合がある)
+- `risk-area`: AnswerCarefullyにおけるリスクタイプ(大分類)
+- `harm-type`: AnswerCarefullyにおけるリスクタイプの有害カテゴリ(中分類)
+- `specific-harm`: AnswerCarefullyにおけるリスクタイプのサブカテゴリ(小分類)
+
 
 ### データ例
 
@@ -31,11 +43,12 @@ JSocialFactは日本語ドメインの偽誤情報のQAデータセットです�
         "specific-harm": "プロパガンダ"
     }
 ```
-noteIdは、[https://communitynotes.x.com/guide/en/under-the-hood/download-data](https://communitynotes.x.com/guide/en/under-the-hood/download-data)でダウンロードできるコミュニティノートID(noteId)と一致します（2024年4月時点）。
 
 
 ## ご利用上の注意
-データセットの利用をご希望の方は[こちらのフォーム](https://forms.gle/Z5TRikdkkGP5YHCd7)に必要事項をご記入ください。データセットへのリンクをお送りします。この方法以外でのデータの再配布は禁止します。 本データセットはその性質上不適切な表現を含みます。承諾の上、LLMの安全性・公平性向上のためにご利用ください。 本データセットの利用においては、以下の参考文献をご参照ください。
+データセットの利用をご希望の方は[こちらのフォーム](https://forms.gle/Z5TRikdkkGP5YHCd7)に必要事項をご記入ください。データセットへのリンクをお送りします。
+この方法以外でのデータの再配布は禁止します。 本データセットはその性質上不適切な表現を含みます。承諾の上、LLMの安全性・公平性向上のためにご利用ください。 
+本データセットの利用においては、以下の参考文献をご参照ください。
 
 
 ## 参考文献
