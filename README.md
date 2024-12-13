@@ -13,6 +13,7 @@ In ver.1, 385 cases are manually generated based on social media logs.
 ## データフォーマット
 データはjson形式で配布しています。  
 データフォーマットは以下の通りです。  
+
 Data is distributed in json formats.  
 Data formats are as follows:  
 
@@ -56,6 +57,7 @@ Data formats are as follows:
 ## ご利用上の注意
 データセットの利用をご希望の方は[こちらのフォーム](https://forms.gle/Z5TRikdkkGP5YHCd7)に必要事項をご記入ください。データセットへのリンクをお送りします。  
 この方法以外でのデータの再配布は禁止します。 
+
 If you would like to use the dataset, please fill out [this form](https://forms.gle/Z5TRikdkkGP5YHCd7)). We will send you a link to the dataset. 
 Redistribution of the data in any other way is prohibited. 
 
@@ -84,12 +86,13 @@ Please refer to the following references when using this dataset.
 
 ## 免責事項
 本データセットの制作者は、利用者が利用者自身又は第三者に与えた損害について、一切の責任を負わないものとする。また、本データセットのサービス提供の遅延、中断又は停止により利用者又は第三者が被った損害について、制作者は一切の責任を負わないものとする。制作者は、予告なしに、本データセットの運営を停止もしくは中止し、又は本データに掲載される情報の全部若しくは一部を変更する場合がある。
+
 The creator of this data set shall not be liable for any damage caused by the user to himself/herself or to a third party. In addition, the creator of this dataset shall assume no responsibility for damages incurred by users or third parties due to delays, interruptions, or stoppages in the provision of this dataset's services. The creator may, without prior notice, suspend or discontinue the operation of this data set, or change all or part of the information contained in this data.
 
-Translated with www.DeepL.com/Translator (free version)
 
 ## 謝辞
 本研究は、国立研究開発法人産業技術総合研究所事業の令和5年度覚醒プロジェクトの助成を受けました。また、データセットの作成は，[LLM勉強会](https://llm-jp.nii.ac.jp/)の協力のもと、国立情報学研究所 大規模言語モデル研究開発センターと共同で行いました。
+
 This research was supported by the FY2023 Awakening Project of the National Institute of Advanced Industrial Science and Technology (AIST). The dataset was created in collaboration with the Center for LLMC, National Institute of Informatics (NII), in cooperation with the [LLM.jp](https://llm-jp.nii.ac.jp/).
 
 ## License
